@@ -16,9 +16,7 @@ test("the product list contains exactly six items", async ({ page }) => {
   await expect(page.locator(".inventory_item")).toHaveCount(6);
 });
 
-test("The item should display correct correct price value", async ({
-  page,
-}) => {
+test("The item should display correct price value", async ({ page }) => {
   const products = [
     { name: "Sauce Labs Backpack", price: "$29.99" },
     { name: "Sauce Labs Bike Light", price: "$9.99" },
